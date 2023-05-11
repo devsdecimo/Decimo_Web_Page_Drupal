@@ -1,0 +1,18 @@
+uuid: a45aa8a7-f907-47ab-ada9-12d39b0b58c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.partener_comment
+id: node.partener_comment.title
+field_name: title
+entity_type: node
+bundle: partener_comment
+label: 'Partner Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

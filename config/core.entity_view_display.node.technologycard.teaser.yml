@@ -1,0 +1,26 @@
+uuid: 72099590-083e-4a08-87b3-976b8fb29248
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.technologycard.field_technologies_description
+    - field.field.node.technologycard.field_technologies_icon
+    - field.field.node.technologycard.field_technologies_subtitle
+    - node.type.technologycard
+  module:
+    - user
+id: node.technologycard.teaser
+targetEntityType: node
+bundle: technologycard
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_technologies_description: true
+  field_technologies_icon: true
+  field_technologies_subtitle: true

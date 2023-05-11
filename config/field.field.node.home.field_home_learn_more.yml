@@ -1,0 +1,19 @@
+uuid: fa2f7bf6-9eea-4331-92f3-07fc31f84544
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_learn_more
+    - node.type.home
+id: node.home.field_home_learn_more
+field_name: field_home_learn_more
+entity_type: node
+bundle: home
+label: 'home learn more'
+description: 'Text for the learn more link (must be "Learn more")'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,38 @@
+uuid: 41798996-9b64-4810-86e9-9a4f60a3fbf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_us_icons
+    - node.type.about_us
+  module:
+    - image
+id: node.about_us.field_about_us_icons
+field_name: field_about_us_icons
+entity_type: node
+bundle: about_us
+label: 'about us icons'
+description: "The icons for the about us page, order must be: \r\n1) Twitter\r\n2) Facebook \r\n3) Instagram"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

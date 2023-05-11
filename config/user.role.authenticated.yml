@@ -1,0 +1,24 @@
+uuid: 78fd617c-327c-44e5-84ea-86a9f79e4a46
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.ckeditor
+    - filter.format.mailchimp_campaign
+  module:
+    - filter
+    - mailchimp_campaign
+    - media
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'administer mailchimp campaigns'
+  - 'use text format ckeditor'
+  - 'use text format mailchimp_campaign'
+  - 'view media'

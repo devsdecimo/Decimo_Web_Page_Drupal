@@ -1,0 +1,21 @@
+uuid: 32c9d3fe-fabc-4965-a4e8-3f1773e16c8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_footeritems
+field_name: field_footeritems
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

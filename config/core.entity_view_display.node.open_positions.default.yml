@@ -1,0 +1,59 @@
+uuid: 0525d9e2-0da5-4e64-8211-7758ec92fe6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.open_positions.field_description_card
+    - field.field.node.open_positions.field_image_card
+    - field.field.node.open_positions.field_job_area
+    - field.field.node.open_positions.field_slogan
+    - node.type.open_positions
+  module:
+    - image
+    - user
+id: node.open_positions.default
+targetEntityType: node
+bundle: open_positions
+mode: default
+content:
+  field_description_card:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_image_card:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_job_area:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_slogan:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

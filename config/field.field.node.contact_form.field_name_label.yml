@@ -1,0 +1,19 @@
+uuid: 99112227-6e24-4ea1-ac3e-e008345f5448
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_label
+    - node.type.contact_form
+id: node.contact_form.field_name_label
+field_name: field_name_label
+entity_type: node
+bundle: contact_form
+label: 'name label'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

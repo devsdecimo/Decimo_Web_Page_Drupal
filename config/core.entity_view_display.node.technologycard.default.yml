@@ -1,0 +1,50 @@
+uuid: 3b999bfa-1434-4470-8081-3d0cbb16d896
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.technologycard.field_technologies_description
+    - field.field.node.technologycard.field_technologies_icon
+    - field.field.node.technologycard.field_technologies_subtitle
+    - node.type.technologycard
+  module:
+    - image
+    - user
+id: node.technologycard.default
+targetEntityType: node
+bundle: technologycard
+mode: default
+content:
+  field_technologies_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_technologies_icon:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_technologies_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

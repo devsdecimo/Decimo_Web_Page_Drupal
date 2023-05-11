@@ -1,0 +1,24 @@
+uuid: 5c0585b2-42c1-4bb9-b692-64e14f639866
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.navbar.field_navbarimage
+    - field.field.node.navbar.field_navbaritems
+    - node.type.navbar
+  module:
+    - user
+id: node.navbar.teaser
+targetEntityType: node
+bundle: navbar
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_navbarimage: true
+  field_navbaritems: true

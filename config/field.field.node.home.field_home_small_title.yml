@@ -1,0 +1,19 @@
+uuid: bc2e6d55-3860-4e96-a035-47179fc0dac3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_small_title
+    - node.type.home
+id: node.home.field_home_small_title
+field_name: field_home_small_title
+entity_type: node
+bundle: home
+label: 'home small title'
+description: 'The upper title in the home page (first one)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

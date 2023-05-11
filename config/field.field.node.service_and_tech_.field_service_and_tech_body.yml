@@ -1,0 +1,19 @@
+uuid: 395f1135-5c8e-4feb-9059-df732a6f5c89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_and_tech_body
+    - node.type.service_and_tech_
+id: node.service_and_tech_.field_service_and_tech_body
+field_name: field_service_and_tech_body
+entity_type: node
+bundle: service_and_tech_
+label: 'service and tech body'
+description: 'Card''s body'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

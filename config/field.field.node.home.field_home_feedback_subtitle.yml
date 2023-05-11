@@ -1,0 +1,19 @@
+uuid: ef725f98-a990-4318-9f38-0ee7c2224122
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_feedback_subtitle
+    - node.type.home
+id: node.home.field_home_feedback_subtitle
+field_name: field_home_feedback_subtitle
+entity_type: node
+bundle: home
+label: 'home feedback subtitle'
+description: 'Subtitle for the feedback section (carousel)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

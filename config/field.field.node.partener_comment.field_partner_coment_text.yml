@@ -1,0 +1,19 @@
+uuid: 6dfdfe61-261c-48aa-a528-591b5e163b94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_coment_text
+    - node.type.partener_comment
+id: node.partener_comment.field_partner_coment_text
+field_name: field_partner_coment_text
+entity_type: node
+bundle: partener_comment
+label: 'partner coment text'
+description: 'The comment of the partner (displayed in the card)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

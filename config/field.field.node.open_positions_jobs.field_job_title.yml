@@ -1,0 +1,19 @@
+uuid: 0100af49-2574-4995-a382-25797266f58d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_title
+    - node.type.open_positions_jobs
+id: node.open_positions_jobs.field_job_title
+field_name: field_job_title
+entity_type: node
+bundle: open_positions_jobs
+label: 'Job Title'
+description: 'Job Title'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

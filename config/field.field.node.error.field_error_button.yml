@@ -1,0 +1,19 @@
+uuid: 66ceed76-348b-469b-bfa6-d17f41cd50c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_error_button
+    - node.type.error
+id: node.error.field_error_button
+field_name: field_error_button
+entity_type: node
+bundle: error
+label: 'Error button'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

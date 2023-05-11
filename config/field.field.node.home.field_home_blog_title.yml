@@ -1,0 +1,19 @@
+uuid: 6cb424ad-56da-4d32-8396-c8ff7688e6f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_blog_title
+    - node.type.home
+id: node.home.field_home_blog_title
+field_name: field_home_blog_title
+entity_type: node
+bundle: home
+label: 'home blog title'
+description: 'Title for the blog section.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

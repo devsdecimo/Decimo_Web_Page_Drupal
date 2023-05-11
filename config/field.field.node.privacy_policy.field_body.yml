@@ -1,0 +1,21 @@
+uuid: c2a6a6f5-47b6-4774-b02b-4a81ba43a628
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.privacy_policy
+  module:
+    - text
+id: node.privacy_policy.field_body
+field_name: field_body
+entity_type: node
+bundle: privacy_policy
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

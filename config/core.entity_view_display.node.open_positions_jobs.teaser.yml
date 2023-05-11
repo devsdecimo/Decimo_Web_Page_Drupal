@@ -1,0 +1,40 @@
+uuid: 244f1b88-73dd-4fb2-a458-ecb153c0a197
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.open_positions_jobs.body
+    - field.field.node.open_positions_jobs.field_job_department
+    - field.field.node.open_positions_jobs.field_job_link
+    - field.field.node.open_positions_jobs.field_job_location
+    - field.field.node.open_positions_jobs.field_job_schedule
+    - field.field.node.open_positions_jobs.field_job_title
+    - node.type.open_positions_jobs
+  module:
+    - text
+    - user
+id: node.open_positions_jobs.teaser
+targetEntityType: node
+bundle: open_positions_jobs
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_job_department: true
+  field_job_link: true
+  field_job_location: true
+  field_job_schedule: true
+  field_job_title: true

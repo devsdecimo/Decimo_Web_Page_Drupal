@@ -1,0 +1,19 @@
+uuid: 1a125459-2db3-4f73-83dd-94aad2f688b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_form
+    - node.type.contact_form
+id: node.contact_form.field_email_form
+field_name: field_email_form
+entity_type: node
+bundle: contact_form
+label: 'email form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

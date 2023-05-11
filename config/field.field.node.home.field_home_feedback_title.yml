@@ -1,0 +1,19 @@
+uuid: 1688b9f8-aef4-4303-9612-6b4d2a71949c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_feedback_title
+    - node.type.home
+id: node.home.field_home_feedback_title
+field_name: field_home_feedback_title
+entity_type: node
+bundle: home
+label: 'home feedback title'
+description: 'Title for the feedback section (carousel)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

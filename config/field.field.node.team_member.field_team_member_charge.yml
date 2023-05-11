@@ -1,0 +1,19 @@
+uuid: 1d332574-70e2-4cf7-8331-7484c9436495
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_member_charge
+    - node.type.team_member
+id: node.team_member.field_team_member_charge
+field_name: field_team_member_charge
+entity_type: node
+bundle: team_member
+label: 'team member charge'
+description: 'The charge of the team memeber'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

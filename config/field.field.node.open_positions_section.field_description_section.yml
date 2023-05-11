@@ -1,0 +1,21 @@
+uuid: 359e3097-56fe-4b55-9082-0392254355f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_section
+    - node.type.open_positions_section
+  module:
+    - text
+id: node.open_positions_section.field_description_section
+field_name: field_description_section
+entity_type: node
+bundle: open_positions_section
+label: 'description section'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 0699bc9e-2f5b-4bd8-a176-3f27ddb6e210
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_main_title
+    - node.type.home
+  module:
+    - text
+id: node.home.field_home_main_title
+field_name: field_home_main_title
+entity_type: node
+bundle: home
+label: 'home main title'
+description: 'Main title for the home page'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

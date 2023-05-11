@@ -1,0 +1,11 @@
+uuid: 44a3ce78-5e27-48b4-a125-56540ba2949c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Blog Page'
+type: blog_page
+description: 'Page where all the details of the blog posts are listed'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

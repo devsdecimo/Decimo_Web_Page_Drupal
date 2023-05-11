@@ -1,0 +1,11 @@
+uuid: bf5c376d-4bcf-498c-9bdc-16542791a3ba
+langcode: en
+status: true
+dependencies: {  }
+name: 'Contact form'
+type: contact_form
+description: 'Contains all the labels and icons of the contact form.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

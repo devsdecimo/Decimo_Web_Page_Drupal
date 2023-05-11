@@ -1,0 +1,41 @@
+uuid: 9d6e4f3e-c329-4009-853c-9b4732922f88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.privacy_policy.field_body
+    - field.field.node.privacy_policy.field_img_privacy_policy
+    - node.type.privacy_policy
+  module:
+    - image
+    - text
+    - user
+id: node.privacy_policy.default
+targetEntityType: node
+bundle: privacy_policy
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_img_privacy_policy:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

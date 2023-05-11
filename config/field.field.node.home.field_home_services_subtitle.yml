@@ -1,0 +1,19 @@
+uuid: eca61be1-dd50-4cb9-8682-60c63d3d8fea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_services_subtitle
+    - node.type.home
+id: node.home.field_home_services_subtitle
+field_name: field_home_services_subtitle
+entity_type: node
+bundle: home
+label: 'home services subtitle'
+description: 'Subtitle for services and technologies section'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

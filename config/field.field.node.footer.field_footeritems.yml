@@ -1,0 +1,19 @@
+uuid: 8b700582-3135-4fc3-8e32-3683f3bd0ef5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footeritems
+    - node.type.footer
+id: node.footer.field_footeritems
+field_name: field_footeritems
+entity_type: node
+bundle: footer
+label: footeritems
+description: "Items for the footer (links). Add them in the following order: \r\n1) About us\r\n2) Solutions\r\n3) Careers\r\n4) Contact us"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

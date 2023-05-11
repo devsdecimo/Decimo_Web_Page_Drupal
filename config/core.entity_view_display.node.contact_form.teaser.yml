@@ -1,0 +1,36 @@
+uuid: b71136a8-ca61-4e09-ac49-c3a96c00b50b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact_form.field_button_form
+    - field.field.node.contact_form.field_email_form
+    - field.field.node.contact_form.field_email_label
+    - field.field.node.contact_form.field_message_form
+    - field.field.node.contact_form.field_message_label
+    - field.field.node.contact_form.field_name_form
+    - field.field.node.contact_form.field_name_label
+    - field.field.node.contact_form.field_title_form
+    - node.type.contact_form
+  module:
+    - user
+id: node.contact_form.teaser
+targetEntityType: node
+bundle: contact_form
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_button_form: true
+  field_email_form: true
+  field_email_label: true
+  field_message_form: true
+  field_message_label: true
+  field_name_form: true
+  field_name_label: true
+  field_title_form: true

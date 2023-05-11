@@ -1,0 +1,23 @@
+uuid: 27958d82-ec8e-4742-8d1a-5d6496a02b5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_us_link
+    - node.type.about_us
+  module:
+    - link
+id: node.about_us.field_about_us_link
+field_name: field_about_us_link
+entity_type: node
+bundle: about_us
+label: 'about us link'
+description: 'Links for the about us section. Links must match the icons.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

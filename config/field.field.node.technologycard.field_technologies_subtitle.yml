@@ -1,0 +1,19 @@
+uuid: f20d7ef1-959d-4cd0-aada-ad15734d8543
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technologies_subtitle
+    - node.type.technologycard
+id: node.technologycard.field_technologies_subtitle
+field_name: field_technologies_subtitle
+entity_type: node
+bundle: technologycard
+label: 'Technologies subtitle'
+description: 'The subtitles for the technologies cards'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

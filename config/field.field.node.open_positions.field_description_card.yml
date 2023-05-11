@@ -1,0 +1,19 @@
+uuid: c00f5b0a-6156-42c3-8705-ae84c0ab91d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_card
+    - node.type.open_positions
+id: node.open_positions.field_description_card
+field_name: field_description_card
+entity_type: node
+bundle: open_positions
+label: 'description card'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

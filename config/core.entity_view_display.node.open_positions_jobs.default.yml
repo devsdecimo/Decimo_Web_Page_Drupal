@@ -1,0 +1,78 @@
+uuid: 50de93a3-a7c3-433e-a46e-e42383ce57fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.open_positions_jobs.body
+    - field.field.node.open_positions_jobs.field_job_department
+    - field.field.node.open_positions_jobs.field_job_link
+    - field.field.node.open_positions_jobs.field_job_location
+    - field.field.node.open_positions_jobs.field_job_schedule
+    - field.field.node.open_positions_jobs.field_job_title
+    - node.type.open_positions_jobs
+  module:
+    - link
+    - text
+    - user
+id: node.open_positions_jobs.default
+targetEntityType: node
+bundle: open_positions_jobs
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_job_department:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_job_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_job_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_job_schedule:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_job_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

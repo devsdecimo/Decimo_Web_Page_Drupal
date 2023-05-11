@@ -1,0 +1,19 @@
+uuid: d79ab37a-3639-407b-a70f-d1885a893560
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_give_us_a_call
+    - node.type.home
+id: node.home.field_home_give_us_a_call
+field_name: field_home_give_us_a_call
+entity_type: node
+bundle: home
+label: 'home give us a call'
+description: 'The text displayed in the give us a call button (must be "Give us a call")'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

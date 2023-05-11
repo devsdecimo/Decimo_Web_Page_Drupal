@@ -1,0 +1,19 @@
+uuid: d991f24e-f049-4351-8a01-5d084acb356e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_member_description
+    - node.type.team_member
+id: node.team_member.field_team_member_description
+field_name: field_team_member_description
+entity_type: node
+bundle: team_member
+label: 'team member description'
+description: 'A short description for the team member'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

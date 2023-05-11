@@ -1,0 +1,19 @@
+uuid: bd3aa1a3-883d-4c2b-bb7e-ab922772ee8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_page_subtitle
+    - node.type.blog_page
+id: node.blog_page.field_blog_page_subtitle
+field_name: field_blog_page_subtitle
+entity_type: node
+bundle: blog_page
+label: 'Blog page subtitle'
+description: 'Blog page subtitle'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

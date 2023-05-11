@@ -1,0 +1,11 @@
+uuid: 8634ffa3-87c8-47db-9b18-c34e69809cde
+langcode: en
+status: true
+dependencies: {  }
+name: 'Team Member'
+type: team_member
+description: 'Members of the team that will be displayed in the page'
+help: 'The title is gonna be the name of the team member'
+new_revision: true
+preview_mode: 2
+display_submitted: true

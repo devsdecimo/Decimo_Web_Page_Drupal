@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: RSNbRD3ekSaZoE19f3eHhm93gKOcD2PtmaAVmV3XMes
+transport: smtp
+smtp_host: smtp.elasticemail.com
+smtp_port: 2525
+smtp_encryption: tls
+sendmail_path: /usr/sbin/sendmail
+sendmail_mode: bs
+smtp_credential_provider: swiftmailer
+smtp_credentials:
+  swiftmailer:
+    username: hilder2805@hotmail.com
+    password: F9FB977962648A3B5C8674F7956A2F083B72
+spool_directory: ''

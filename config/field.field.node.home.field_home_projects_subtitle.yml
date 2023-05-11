@@ -1,0 +1,19 @@
+uuid: 7c4844dc-5370-47ed-8338-0b25df7607f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_projects_subtitle
+    - node.type.home
+id: node.home.field_home_projects_subtitle
+field_name: field_home_projects_subtitle
+entity_type: node
+bundle: home
+label: 'home projects subtitle'
+description: 'Subtitle for the projects section.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

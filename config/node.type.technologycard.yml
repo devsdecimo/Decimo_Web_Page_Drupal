@@ -1,0 +1,11 @@
+uuid: fdcf5dd1-efab-48ac-98ff-1ed1ba44488b
+langcode: en
+status: true
+dependencies: {  }
+name: TechnologyCard
+type: technologycard
+description: 'Cards for the solutions and technologies in that section.'
+help: ''
+new_revision: true
+preview_mode: 2
+display_submitted: true

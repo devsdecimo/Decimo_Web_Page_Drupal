@@ -1,0 +1,19 @@
+uuid: 292927dc-0aff-49e6-8ca5-ceceee3da296
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_team_title
+    - node.type.home
+id: node.home.field_home_team_title
+field_name: field_home_team_title
+entity_type: node
+bundle: home
+label: 'home team title'
+description: 'Title for the team members section'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

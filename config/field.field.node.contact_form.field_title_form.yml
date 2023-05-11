@@ -1,0 +1,19 @@
+uuid: 22099181-9da6-4421-9240-16baf6d85ca0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_form
+    - node.type.contact_form
+id: node.contact_form.field_title_form
+field_name: field_title_form
+entity_type: node
+bundle: contact_form
+label: 'title form'
+description: 'Main title of the contact form.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

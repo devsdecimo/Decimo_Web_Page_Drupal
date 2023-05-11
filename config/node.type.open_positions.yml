@@ -1,0 +1,11 @@
+uuid: af3f3759-12a4-4b61-9d19-1441a8735b0c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Open Positions Cards'
+type: open_positions
+description: 'This content type is for job component'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

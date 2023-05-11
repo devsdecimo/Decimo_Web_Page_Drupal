@@ -1,0 +1,6 @@
+name: Blog Post Mailer
+description: 'Envía un correo electrónico a los suscriptores al crear un nuevo blog post.'
+type: module
+core_version_requirement: ^9
+dependencies:
+  - mailchimp:mailchimp

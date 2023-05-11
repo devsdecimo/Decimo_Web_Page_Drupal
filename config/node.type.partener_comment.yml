@@ -1,0 +1,11 @@
+uuid: 7cd2ff7d-e52b-4b5b-8f75-9aba0c75d0cb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Partener Comment'
+type: partener_comment
+description: 'Feedback from a partner'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

@@ -1,0 +1,46 @@
+uuid: f42450dd-f438-47fa-9300-0ccc41a1666c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.field_body_title
+    - field.field.node.contact.field_contact_footer_title
+    - field.field.node.contact.field_contact_header_title
+    - node.type.contact
+  module:
+    - text
+    - user
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  field_body_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_contact_footer_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_contact_header_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

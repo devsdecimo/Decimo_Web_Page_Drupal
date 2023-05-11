@@ -1,0 +1,19 @@
+uuid: 1d5d708f-4359-4e96-8bc3-eaffef91e527
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_schedule
+    - node.type.open_positions_jobs
+id: node.open_positions_jobs.field_job_schedule
+field_name: field_job_schedule
+entity_type: node
+bundle: open_positions_jobs
+label: 'Job Schedule'
+description: 'Type of working day of the position'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

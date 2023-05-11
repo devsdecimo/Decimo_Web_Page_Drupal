@@ -1,0 +1,62 @@
+uuid: c786b886-9df9-44ac-bb0d-9dbdc6b0b50f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.footer.field_footercopyright
+    - field.field.node.footer.field_footericons
+    - field.field.node.footer.field_footeritems
+    - field.field.node.footer.field_footerlogo
+    - node.type.footer
+  module:
+    - image
+    - user
+id: node.footer.default
+targetEntityType: node
+bundle: footer
+mode: default
+content:
+  field_footercopyright:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_footericons:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_footeritems:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_footerlogo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 2b071ac8-91bf-4132-ad16-6fac7be03cf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footercopyright
+    - node.type.footer
+id: node.footer.field_footercopyright
+field_name: field_footercopyright
+entity_type: node
+bundle: footer
+label: footercopyright
+description: 'Copyright info in the footer (bottom left).'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

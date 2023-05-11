@@ -1,0 +1,11 @@
+uuid: 94a04c06-4128-4efb-bd84-27f88313dd7f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Open Positions Page'
+type: open_positions_page
+description: 'Open Positions Page where available positions are listed'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

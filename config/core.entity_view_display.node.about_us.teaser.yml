@@ -1,0 +1,30 @@
+uuid: 1db1d7e1-903f-4937-a52f-646122618240
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_us.field_about_us_author_and_charge
+    - field.field.node.about_us.field_about_us_decimo_logo
+    - field.field.node.about_us.field_about_us_icons
+    - field.field.node.about_us.field_about_us_link
+    - field.field.node.about_us.field_about_us_main_text
+    - node.type.about_us
+  module:
+    - user
+id: node.about_us.teaser
+targetEntityType: node
+bundle: about_us
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_about_us_author_and_charge: true
+  field_about_us_decimo_logo: true
+  field_about_us_icons: true
+  field_about_us_link: true
+  field_about_us_main_text: true

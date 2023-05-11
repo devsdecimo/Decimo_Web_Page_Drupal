@@ -1,0 +1,19 @@
+uuid: 20b3a856-b149-4806-aef3-e48cfbb3b1ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_open_positions_title
+    - node.type.home
+id: node.home.field_home_open_positions_title
+field_name: field_home_open_positions_title
+entity_type: node
+bundle: home
+label: 'home open positions title'
+description: 'Title for open positions section'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

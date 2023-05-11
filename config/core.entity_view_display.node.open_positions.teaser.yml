@@ -1,0 +1,28 @@
+uuid: 1696ee02-4637-4d70-b46d-28a85a7bd564
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.open_positions.field_description_card
+    - field.field.node.open_positions.field_image_card
+    - field.field.node.open_positions.field_job_area
+    - field.field.node.open_positions.field_slogan
+    - node.type.open_positions
+  module:
+    - user
+id: node.open_positions.teaser
+targetEntityType: node
+bundle: open_positions
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description_card: true
+  field_image_card: true
+  field_job_area: true
+  field_slogan: true

@@ -1,0 +1,45 @@
+uuid: 810bbdb5-bc4d-4ce6-9f84-08a3aec1b4e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.open_positions_section.field_button_section
+    - field.field.node.open_positions_section.field_description_section
+    - field.field.node.open_positions_section.field_title_section
+    - node.type.open_positions_section
+  module:
+    - text
+    - user
+id: node.open_positions_section.default
+targetEntityType: node
+bundle: open_positions_section
+mode: default
+content:
+  field_button_section:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_description_section:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_title_section:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

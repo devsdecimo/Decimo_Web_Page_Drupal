@@ -1,0 +1,19 @@
+uuid: f73b2a20-28f2-412c-a6eb-97403293a3df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_get_a_quote
+    - node.type.home
+id: node.home.field_home_get_a_quote
+field_name: field_home_get_a_quote
+entity_type: node
+bundle: home
+label: 'home get a quote'
+description: 'text for the get a quote link (must be "Get a quote")'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,38 @@
+uuid: 4a50eb1b-4d9d-47d7-b98b-2b9e283ac1b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footerlogo
+    - node.type.footer
+  module:
+    - image
+id: node.footer.field_footerlogo
+field_name: field_footerlogo
+entity_type: node
+bundle: footer
+label: footerlogo
+description: 'The right image for the footer (logo)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

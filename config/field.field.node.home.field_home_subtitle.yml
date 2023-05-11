@@ -1,0 +1,19 @@
+uuid: 7cd034d8-b3e6-4b76-be09-7e8d3a6df153
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_subtitle
+    - node.type.home
+id: node.home.field_home_subtitle
+field_name: field_home_subtitle
+entity_type: node
+bundle: home
+label: 'home subtitle'
+description: 'Subtitle for the home page (under the colored text)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

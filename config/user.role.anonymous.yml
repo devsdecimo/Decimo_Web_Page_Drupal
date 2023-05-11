@@ -1,0 +1,18 @@
+uuid: c7b6206d-8882-4875-bebc-80ecccfa4a4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.ckeditor
+    - rest.resource.webform_rest_submit
+  module:
+    - filter
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  2: 'use text format ckeditor'
+  3: 'use text format ckeditor'

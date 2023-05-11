@@ -1,0 +1,76 @@
+uuid: dbe979eb-0959-407f-adee-bb26d051355f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_us.field_about_us_author_and_charge
+    - field.field.node.about_us.field_about_us_decimo_logo
+    - field.field.node.about_us.field_about_us_icons
+    - field.field.node.about_us.field_about_us_link
+    - field.field.node.about_us.field_about_us_main_text
+    - node.type.about_us
+  module:
+    - image
+    - link
+    - user
+id: node.about_us.default
+targetEntityType: node
+bundle: about_us
+mode: default
+content:
+  field_about_us_author_and_charge:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_about_us_decimo_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_about_us_icons:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_about_us_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_about_us_main_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

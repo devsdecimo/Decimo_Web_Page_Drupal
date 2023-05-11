@@ -1,0 +1,11 @@
+uuid: 6ac14e42-1ebf-4277-868e-4393a6f6eeaf
+langcode: en
+status: true
+dependencies: {  }
+name: NavBar
+type: navbar
+description: 'Website main navigation bar'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

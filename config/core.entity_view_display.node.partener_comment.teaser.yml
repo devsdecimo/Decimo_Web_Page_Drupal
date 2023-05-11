@@ -1,0 +1,24 @@
+uuid: d12dec4f-c35e-45f6-aaa5-e17b786386d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.partener_comment.field_partner_charge
+    - field.field.node.partener_comment.field_partner_coment_text
+    - node.type.partener_comment
+  module:
+    - user
+id: node.partener_comment.teaser
+targetEntityType: node
+bundle: partener_comment
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_partner_charge: true
+  field_partner_coment_text: true

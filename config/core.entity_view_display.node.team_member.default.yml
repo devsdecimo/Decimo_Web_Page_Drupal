@@ -1,0 +1,62 @@
+uuid: 32f1bfcc-921b-4a76-b4bd-2b43850a73bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.team_member.field_team_member_charge
+    - field.field.node.team_member.field_team_member_description
+    - field.field.node.team_member.field_team_member_icons
+    - field.field.node.team_member.field_team_member_image
+    - node.type.team_member
+  module:
+    - image
+    - user
+id: node.team_member.default
+targetEntityType: node
+bundle: team_member
+mode: default
+content:
+  field_team_member_charge:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_team_member_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_team_member_icons:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_team_member_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

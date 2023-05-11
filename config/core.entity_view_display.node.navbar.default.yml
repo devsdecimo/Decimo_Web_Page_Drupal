@@ -1,0 +1,41 @@
+uuid: f0a19a46-4b97-4513-9a9c-740a0dda237b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.navbar.field_navbarimage
+    - field.field.node.navbar.field_navbaritems
+    - node.type.navbar
+  module:
+    - image
+    - user
+id: node.navbar.default
+targetEntityType: node
+bundle: navbar
+mode: default
+content:
+  field_navbarimage:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_navbaritems:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

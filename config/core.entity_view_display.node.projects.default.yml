@@ -1,0 +1,32 @@
+uuid: 04a442ba-8077-461b-8de2-d12ccfd3b1bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.projects.field_project_image
+    - node.type.projects
+  module:
+    - image
+    - user
+id: node.projects.default
+targetEntityType: node
+bundle: projects
+mode: default
+content:
+  field_project_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

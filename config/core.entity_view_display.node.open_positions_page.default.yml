@@ -1,0 +1,46 @@
+uuid: d0a73f77-9de0-4c64-af7f-22c280f8533f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.open_positions_page.field_open_positions_button_filt
+    - field.field.node.open_positions_page.field_open_positions_page_button
+    - field.field.node.open_positions_page.field_open_positions_page_title
+    - node.type.open_positions_page
+  module:
+    - user
+id: node.open_positions_page.default
+targetEntityType: node
+bundle: open_positions_page
+mode: default
+content:
+  field_open_positions_button_filt:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_open_positions_page_button:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_open_positions_page_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

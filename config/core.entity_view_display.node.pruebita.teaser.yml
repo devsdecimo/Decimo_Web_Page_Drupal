@@ -1,0 +1,32 @@
+uuid: 9184ca2c-a38c-45ad-8963-7fd12aba44d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pruebita.body
+    - field.field.node.pruebita.field_testing_svg
+    - node.type.pruebita
+  module:
+    - text
+    - user
+id: node.pruebita.teaser
+targetEntityType: node
+bundle: pruebita
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_testing_svg: true

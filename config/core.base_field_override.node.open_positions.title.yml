@@ -1,0 +1,18 @@
+uuid: 1e7a217e-455c-4322-a167-28c8c746fd6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.open_positions
+id: node.open_positions.title
+field_name: title
+entity_type: node
+bundle: open_positions
+label: 'Open Positions'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 477b700b-31d1-41d2-a81d-dace21e9262f
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.ckeditor
+    - rest.resource.webform_rest_submit
+  module:
+    - filter
+    - media
+    - rest
+    - system
+id: gatsby_client
+label: 'Gatsby Client'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content'
+  - 'use text format ckeditor'
+  - 'view media'
+  - 'restful post webform_rest_submit'

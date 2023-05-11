@@ -1,0 +1,159 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function blog_post_mailer_node_insert(NodeInterface $node) {
+  if ($node->getType() == 'blog_post' && $node->isPublished()) {
+    blog_post_mailer_send_email($node);
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function blog_post_mailer_node_update(NodeInterface $node) {
+  // Check if the node was just published.
+  if ($node->getType() == 'blog_post' && $node->isPublished() && !$node->original->isPublished()) {
+    blog_post_mailer_send_email($node);
+  }
+}
+
+/**
+ * Sends an email to subscribers when a new blog post is created.
+ */
+function blog_post_mailer_send_email(NodeInterface $node) {
+  // Get Mailchimp subscribers.
+  $subscribers = blog_post_mailer_get_mailchimp_subscribers();
+
+  // Base URL of your Gatsby site.
+  $gatsby_site_url = 'https://decimo-technology-solutions.netlify.app';
+
+  // Get the title of the node and replace spaces with hyphens.
+  $post_title = $node->getTitle();
+  $post_slug = strtolower(preg_replace('/[^a-z0-9]+/i', '-', trim(preg_replace('/\W+/', ' ', $post_title))));
+
+  // Generate the complete URL of the blog post in Gatsby.
+  $gatsby_post_url = $gatsby_site_url . '/blog/' . $post_slug;
+
+  // Get the body of the node as the preview.
+  $post_body = strip_tags($node->get('body')->value);
+  $post_preview = substr($post_body, 0, 200) . '...';
+
+  // Configure and send the email using Mandrillapp template.
+  foreach ($subscribers as $subscriber) {
+    $to = $subscriber['email_address'];
+    $params = [
+      'subject' => 'Nuevo blog post en Decimo Technology',
+      'from_email' => 'notifications@decimoinc.com',
+      'from_name' => 'Decimo Technology',
+      'to' => $to,
+      'template_name' => 'decimo-blog',
+      'template_data' => [
+        'BLOG_TITLE' => $post_title,
+        'BLOG_PREVIEW' => $post_preview,
+        'BUTTON_URL' => $gatsby_post_url,
+      ],
+    ];
+    blog_post_mailer_send_mandrill_template_with_send_template($params);
+  }
+}
+
+/**
+ * Get Mailchimp subscribers.
+ */
+function blog_post_mailer_get_mailchimp_subscribers() {
+  // Make sure to configure the API Key and List ID in Mailchimp settings in Drupal.
+  $config = \Drupal::config('mailchimp.settings');
+  $api_key = $config->get('api_key');
+  $list_id = 'a624c3e263';
+
+  // Extract the server prefix from the API key.
+  $server_prefix = explode('-', $api_key)[1];
+  $base_uri = "https://{$server_prefix}.api.mailchimp.com/3.0/";
+
+  $client = \Drupal::httpClient();
+
+  $subscribers = [];
+  $offset = 0;
+  $limit = 50;
+  do {
+    $response = $client->get($base_uri . 'lists/' . $list_id . '/members', [
+      'auth' => ['apikey', $api_key],
+      'query' => [
+        'offset' => $offset,
+        'count' => $limit,
+        'status' => 'subscribed',
+      ],
+    ]);
+
+    $response_data = json_decode($response->getBody(), TRUE);
+    $subscribers = array_merge($subscribers, $response_data['members']);
+    $offset += $limit;
+  } while (count($response_data['members']) === $limit);
+
+  return $subscribers;
+}
+
+/**
+ * Sends email using Mandrillapp template.
+ */
+/**
+ * Sends email using Mandrillapp send-template endpoint.
+ */
+function blog_post_mailer_send_mandrill_template_with_send_template($params) {
+  $url = 'https://mandrillapp.com/api/1.0/messages/send-template.json';
+
+  $params['key'] = 'md-Ps0zykG5RBQ4H-hfajuj9g';
+
+  $data = array(
+    'key' => $params['key'],
+    'template_name' => $params['template_name'],
+    'template_content' => array(),
+    'message' => array(
+      'subject' => $params['subject'],
+      'from_email' => $params['from_email'],
+      'from_name' => $params['from_name'],
+      'to' => array(
+        array(
+          'email' => $params['to'],
+          'type' => 'to',
+        ),
+      ),
+      'global_merge_vars' => array(
+        array(
+          'name' => 'BLOG_TITLE',
+          'content' => $params['template_data']['BLOG_TITLE'],
+        ),
+        array(
+          'name' => 'BLOG_PREVIEW',
+          'content' => $params['template_data']['BLOG_PREVIEW'],
+        ),
+        array(
+          'name' => 'BUTTON_URL',
+          'content' => $params['template_data']['BUTTON_URL'],
+        ),
+      ),
+    ),
+    'async' => false,
+  );
+
+  $options = array(
+    'http' => array(
+      'header'  => "Content-type: application/json\r\n",
+      'method'  => 'POST',
+      'content' => json_encode($data),
+    ),
+  );
+
+  $context  = stream_context_create($options);
+  $response = file_get_contents($url, false, $context);
+  $result = json_decode($response);
+
+  if ($result[0]->status == 'rejected') {
+    \Drupal::logger('blog_post_mailer')->error('There was a problem sending the email to %email.', ['%email' => $params['to']]);
+  }
+}

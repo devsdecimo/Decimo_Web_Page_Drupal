@@ -1,0 +1,26 @@
+uuid: 83e92850-d903-4f10-a623-21825794a315
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.open_positions_section.field_button_section
+    - field.field.node.open_positions_section.field_description_section
+    - field.field.node.open_positions_section.field_title_section
+    - node.type.open_positions_section
+  module:
+    - user
+id: node.open_positions_section.teaser
+targetEntityType: node
+bundle: open_positions_section
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_button_section: true
+  field_description_section: true
+  field_title_section: true

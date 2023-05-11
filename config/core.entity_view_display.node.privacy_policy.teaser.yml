@@ -1,0 +1,24 @@
+uuid: 07106ec6-5bd7-4715-9dae-7660016354c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.privacy_policy.field_body
+    - field.field.node.privacy_policy.field_img_privacy_policy
+    - node.type.privacy_policy
+  module:
+    - user
+id: node.privacy_policy.teaser
+targetEntityType: node
+bundle: privacy_policy
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_img_privacy_policy: true

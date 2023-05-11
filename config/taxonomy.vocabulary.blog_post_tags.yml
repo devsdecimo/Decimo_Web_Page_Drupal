@@ -1,0 +1,8 @@
+uuid: 7e987a1e-220a-415f-b3c4-8dccb7684eac
+langcode: en
+status: true
+dependencies: {  }
+name: 'Blog Post Tags'
+vid: blog_post_tags
+description: 'Tags to categorize blog posts, helps to better organize the content.'
+weight: 0

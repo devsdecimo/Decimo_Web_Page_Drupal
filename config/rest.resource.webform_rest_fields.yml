@@ -1,0 +1,18 @@
+uuid: 771133f6-d64a-4a7f-8360-9baa0c8a19b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - serialization
+    - webform_rest
+id: webform_rest_fields
+plugin_id: webform_rest_fields
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth

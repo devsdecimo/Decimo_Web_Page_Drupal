@@ -1,0 +1,23 @@
+uuid: 63acabcf-8c32-4a4f-ab5b-9f3cd2555f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pruebita
+  module:
+    - text
+id: node.pruebita.body
+field_name: body
+entity_type: node
+bundle: pruebita
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

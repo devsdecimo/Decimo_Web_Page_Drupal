@@ -1,0 +1,37 @@
+uuid: 6a154030-7251-4480-a026-9f278f58ad56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.partener_comment.field_partner_charge
+    - field.field.node.partener_comment.field_partner_coment_text
+    - node.type.partener_comment
+  module:
+    - user
+id: node.partener_comment.default
+targetEntityType: node
+bundle: partener_comment
+mode: default
+content:
+  field_partner_charge:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_partner_coment_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

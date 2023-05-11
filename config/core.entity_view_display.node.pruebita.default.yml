@@ -1,0 +1,47 @@
+uuid: 6ba81bfb-c215-4b7b-8319-5581cb3b1509
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pruebita.body
+    - field.field.node.pruebita.field_testing_svg
+    - node.type.pruebita
+  module:
+    - svg_image_field
+    - text
+    - user
+id: node.pruebita.default
+targetEntityType: node
+bundle: pruebita
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_testing_svg:
+    type: svg_image_field_formatter
+    label: above
+    settings:
+      inline: false
+      apply_dimensions: true
+      width: 25
+      height: 25
+      enable_alt: true
+      enable_title: true
+      link: ''
+      force_fill: false
+      sanitize: true
+      sanitize_remote: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

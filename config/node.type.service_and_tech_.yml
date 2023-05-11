@@ -1,0 +1,11 @@
+uuid: e0cd9217-0565-493c-a98c-9a6bffc72195
+langcode: en
+status: true
+dependencies: {  }
+name: 'Service and Tech'
+type: service_and_tech_
+description: 'Card of the services and technologies section.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

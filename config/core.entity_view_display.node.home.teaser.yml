@@ -1,0 +1,56 @@
+uuid: 4ad6fd7b-f196-4ef2-b094-549566ef09e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home.field_home_blog_link
+    - field.field.node.home.field_home_blog_subtitle
+    - field.field.node.home.field_home_blog_title
+    - field.field.node.home.field_home_feedback_subtitle
+    - field.field.node.home.field_home_feedback_title
+    - field.field.node.home.field_home_get_a_quote
+    - field.field.node.home.field_home_give_us_a_call
+    - field.field.node.home.field_home_image
+    - field.field.node.home.field_home_learn_more
+    - field.field.node.home.field_home_main_title
+    - field.field.node.home.field_home_open_positions_title
+    - field.field.node.home.field_home_projects_subtitle
+    - field.field.node.home.field_home_projects_title
+    - field.field.node.home.field_home_services_subtitle
+    - field.field.node.home.field_home_services_title
+    - field.field.node.home.field_home_small_title
+    - field.field.node.home.field_home_subtitle
+    - field.field.node.home.field_home_team_title
+    - node.type.home
+  module:
+    - user
+id: node.home.teaser
+targetEntityType: node
+bundle: home
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_home_blog_link: true
+  field_home_blog_subtitle: true
+  field_home_blog_title: true
+  field_home_feedback_subtitle: true
+  field_home_feedback_title: true
+  field_home_get_a_quote: true
+  field_home_give_us_a_call: true
+  field_home_image: true
+  field_home_learn_more: true
+  field_home_main_title: true
+  field_home_open_positions_title: true
+  field_home_projects_subtitle: true
+  field_home_projects_title: true
+  field_home_services_subtitle: true
+  field_home_services_title: true
+  field_home_small_title: true
+  field_home_subtitle: true
+  field_home_team_title: true

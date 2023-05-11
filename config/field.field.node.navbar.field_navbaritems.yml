@@ -1,0 +1,19 @@
+uuid: ab24e012-03fc-44c4-a3b7-bb61e2142068
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_navbaritems
+    - node.type.navbar
+id: node.navbar.field_navbaritems
+field_name: field_navbaritems
+entity_type: node
+bundle: navbar
+label: 'Navbar items'
+description: "These are the items for the navbar. You might add them in the following order: \r\n1) Home\r\n2) Solutions\r\n3) About Us\r\n4) Blog\r\n5) Careers\r\n6) Contact us"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

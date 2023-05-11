@@ -1,0 +1,29 @@
+uuid: 369bbffe-fdba-4c67-abb9-4c108e5077a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_department
+    - node.type.open_positions_jobs
+    - taxonomy.vocabulary.job_department
+id: node.open_positions_jobs.field_job_department
+field_name: field_job_department
+entity_type: node
+bundle: open_positions_jobs
+label: 'Job Department'
+description: 'Job Department'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      job_department: job_department
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

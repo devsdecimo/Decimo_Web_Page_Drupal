@@ -1,0 +1,11 @@
+uuid: db5d6b9a-62e5-4613-a346-dfd08306d71b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Open Positions Job'
+type: open_positions_jobs
+description: 'Job position available '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

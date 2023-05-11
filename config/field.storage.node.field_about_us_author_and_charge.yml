@@ -1,0 +1,21 @@
+uuid: dadb30de-5f74-4362-9874-4e7f9c16a911
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_about_us_author_and_charge
+field_name: field_about_us_author_and_charge
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

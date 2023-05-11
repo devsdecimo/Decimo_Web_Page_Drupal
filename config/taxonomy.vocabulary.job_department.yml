@@ -1,0 +1,8 @@
+uuid: 7338eda9-92e1-484a-9e64-a154cfb1b069
+langcode: en
+status: true
+dependencies: {  }
+name: 'Job Department'
+vid: job_department
+description: 'Job Department of Decimo Technology Solutions'
+weight: 0

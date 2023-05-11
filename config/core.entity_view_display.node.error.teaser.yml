@@ -1,0 +1,28 @@
+uuid: f82516d8-6b96-48cf-9ba8-ca935ff4b036
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.error.field_error_button
+    - field.field.node.error.field_error_image
+    - field.field.node.error.field_error_subtitle
+    - field.field.node.error.field_error_title
+    - node.type.error
+  module:
+    - user
+id: node.error.teaser
+targetEntityType: node
+bundle: error
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_error_button: true
+  field_error_image: true
+  field_error_subtitle: true
+  field_error_title: true

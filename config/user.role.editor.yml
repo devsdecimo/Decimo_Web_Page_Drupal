@@ -1,0 +1,32 @@
+uuid: 834f1dd5-7195-4be0-8685-13a4244a9862
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.ckeditor
+    - node.type.blog_post
+    - node.type.contact
+  module:
+    - filter
+    - media
+    - node
+    - system
+    - toolbar
+id: editor
+label: Editor
+weight: 2
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'change own username'
+  - 'create blog_post content'
+  - 'delete own blog_post content'
+  - 'edit own blog_post content'
+  - 'revert contact revisions'
+  - 'use text format ckeditor'
+  - 'view blog_post revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'

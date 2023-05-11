@@ -1,0 +1,11 @@
+uuid: 77999ba8-71cf-4d8a-82f1-0cc4d78965ce
+langcode: en
+status: true
+dependencies: {  }
+name: 'Open Positions section'
+type: open_positions_section
+description: 'Title, description and button of right section on a Open Positions component.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

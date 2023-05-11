@@ -1,0 +1,26 @@
+uuid: f956c736-e976-4c10-bc23-ed22125d32eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact.field_body_title
+    - field.field.node.contact.field_contact_footer_title
+    - field.field.node.contact.field_contact_header_title
+    - node.type.contact
+  module:
+    - user
+id: node.contact.teaser
+targetEntityType: node
+bundle: contact
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body_title: true
+  field_contact_footer_title: true
+  field_contact_header_title: true

@@ -1,0 +1,23 @@
+uuid: 8b664fcb-ebf8-491f-913b-422eef184fc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.open_positions_jobs
+  module:
+    - text
+id: node.open_positions_jobs.body
+field_name: body
+entity_type: node
+bundle: open_positions_jobs
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

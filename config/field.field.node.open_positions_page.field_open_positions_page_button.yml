@@ -1,0 +1,19 @@
+uuid: 6ff41c43-a127-40f5-b169-fd74f1039ca4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_positions_page_button
+    - node.type.open_positions_page
+id: node.open_positions_page.field_open_positions_page_button
+field_name: field_open_positions_page_button
+entity_type: node
+bundle: open_positions_page
+label: 'Open Positions Page Button'
+description: 'Open Positions Page Button'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

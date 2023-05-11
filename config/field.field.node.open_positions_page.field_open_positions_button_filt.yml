@@ -1,0 +1,19 @@
+uuid: c8a252f9-1b0b-443c-8f71-c25404296c26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_positions_button_filt
+    - node.type.open_positions_page
+id: node.open_positions_page.field_open_positions_button_filt
+field_name: field_open_positions_button_filt
+entity_type: node
+bundle: open_positions_page
+label: 'Open Positions Button Filter All'
+description: 'Button to filter all available jobs from any department'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

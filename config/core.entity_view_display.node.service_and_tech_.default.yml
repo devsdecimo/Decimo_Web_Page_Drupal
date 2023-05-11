@@ -1,0 +1,50 @@
+uuid: 9f75e402-b45d-4ce7-b544-7189c4b553e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service_and_tech_.field_service_and_tech_body
+    - field.field.node.service_and_tech_.field_service_and_tech_icon
+    - field.field.node.service_and_tech_.field_service_and_tech_subtitle
+    - node.type.service_and_tech_
+  module:
+    - image
+    - user
+id: node.service_and_tech_.default
+targetEntityType: node
+bundle: service_and_tech_
+mode: default
+content:
+  field_service_and_tech_body:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_service_and_tech_icon:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_service_and_tech_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

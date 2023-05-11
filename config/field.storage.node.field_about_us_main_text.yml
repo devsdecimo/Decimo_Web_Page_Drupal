@@ -1,0 +1,21 @@
+uuid: 835b6267-6d67-4d12-a827-16c4ba71592e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_about_us_main_text
+field_name: field_about_us_main_text
+entity_type: node
+type: string
+settings:
+  max_length: 700
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

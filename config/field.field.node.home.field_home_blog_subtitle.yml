@@ -1,0 +1,19 @@
+uuid: 3e27b3b4-58ef-43db-8d5a-a54072b150a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_blog_subtitle
+    - node.type.home
+id: node.home.field_home_blog_subtitle
+field_name: field_home_blog_subtitle
+entity_type: node
+bundle: home
+label: 'home blog subtitle'
+description: 'Subtitle for the blog section'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

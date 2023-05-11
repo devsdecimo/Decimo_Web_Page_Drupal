@@ -1,0 +1,19 @@
+uuid: 67fd6d9a-89fc-4cf8-b37d-d1c259de2bff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_us_author_and_charge
+    - node.type.about_us
+id: node.about_us.field_about_us_author_and_charge
+field_name: field_about_us_author_and_charge
+entity_type: node
+bundle: about_us
+label: 'about us author and charge'
+description: 'The name of the author and their charge in Decimo (Must be in that order, first name and then charge)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

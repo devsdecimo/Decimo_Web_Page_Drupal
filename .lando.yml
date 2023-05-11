@@ -1,0 +1,6 @@
+name: decimo-pantheon
+recipe: pantheon
+config:
+  framework: drupal8
+  site: decimo-pantheon
+  id: d1fff5a1-4b7f-474e-b674-65f52b9caa7f

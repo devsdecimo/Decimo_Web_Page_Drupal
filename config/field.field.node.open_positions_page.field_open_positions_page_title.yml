@@ -1,0 +1,19 @@
+uuid: ca9d9dd8-c2bb-45fb-bc13-d23b293bc192
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_positions_page_title
+    - node.type.open_positions_page
+id: node.open_positions_page.field_open_positions_page_title
+field_name: field_open_positions_page_title
+entity_type: node
+bundle: open_positions_page
+label: 'Open Positions Page Title'
+description: 'The title of the Open Positions page'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

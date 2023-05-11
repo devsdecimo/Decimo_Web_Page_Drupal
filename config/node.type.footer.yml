@@ -1,0 +1,11 @@
+uuid: e88c4994-f4cc-4f33-88d3-38061baddaa7
+langcode: en
+status: true
+dependencies: {  }
+name: Footer
+type: footer
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
