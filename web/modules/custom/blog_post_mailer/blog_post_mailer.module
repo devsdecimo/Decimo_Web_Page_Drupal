@@ -30,7 +30,7 @@ function blog_post_mailer_send_email(NodeInterface $node) {
   $subscribers = blog_post_mailer_get_mailchimp_subscribers();
 
   // Base URL of your Gatsby site.
-  $gatsby_site_url = 'https://decimo-technology-solutions.netlify.app';
+  $gatsby_site_url = 'YOUR-GATSBY-SITE';
 
   // Get the title of the node and replace spaces with hyphens.
   $post_title = $node->getTitle();
@@ -47,11 +47,11 @@ function blog_post_mailer_send_email(NodeInterface $node) {
   foreach ($subscribers as $subscriber) {
     $to = $subscriber['email_address'];
     $params = [
-      'subject' => 'Nuevo blog post en Decimo Technology',
-      'from_email' => 'notifications@decimoinc.com',
-      'from_name' => 'Decimo Technology',
+      'subject' => 'YOUR-SUBJECT',
+      'from_email' => 'YOUR-EMAIL',
+      'from_name' => 'YOUR-NAME',
       'to' => $to,
-      'template_name' => 'decimo-blog',
+      'template_name' => 'YOUR-TEMPLATE-NAME',
       'template_data' => [
         'BLOG_TITLE' => $post_title,
         'BLOG_PREVIEW' => $post_preview,
@@ -69,7 +69,7 @@ function blog_post_mailer_get_mailchimp_subscribers() {
   // Make sure to configure the API Key and List ID in Mailchimp settings in Drupal.
   $config = \Drupal::config('mailchimp.settings');
   $api_key = $config->get('api_key');
-  $list_id = 'a624c3e263';
+  $list_id = 'YOUR-LIST-ID';
 
   // Extract the server prefix from the API key.
   $server_prefix = explode('-', $api_key)[1];
@@ -107,7 +107,7 @@ function blog_post_mailer_get_mailchimp_subscribers() {
 function blog_post_mailer_send_mandrill_template_with_send_template($params) {
   $url = 'https://mandrillapp.com/api/1.0/messages/send-template.json';
 
-  $params['key'] = 'md-Ps0zykG5RBQ4H-hfajuj9g';
+  $params['key'] = 'YOUR-MANDRIL-API-KEY';
 
   $data = array(
     'key' => $params['key'],
